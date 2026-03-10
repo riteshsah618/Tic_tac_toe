@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Ultimate Tic Tac Toe</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<h1>🎮 Ultimate Tic Tac Toe</h1>
+
+<div class="controls">
+<select id="mode">
+<option value="pvp">Player vs Player</option>
+<option value="ai">Player vs AI</option>
+</select>
+
+<button onclick="toggleSound()">🔊 Sound</button>
+</div>
+
+<div id="timer">⏱ Time: 10</div>
+
+<div class="board" id="board"></div>
+
+<div id="status">Player X's Turn</div>
+
+<div class="controls">
+<button onclick="undo()">Undo</button>
+<button onclick="resetGame()">Restart</button>
+</div>
+
+<div class="scoreboard">
+❌ X: <span id="xWins">0</span> |
+⭕ O: <span id="oWins">0</span> |
+🤝 Draws: <span id="draws">0</span>
+</div>
+
+<audio id="click" src="https://www.soundjay.com/buttons/sounds/button-16.mp3"></audio>
+<audio id="winSound" src="https://www.soundjay.com/misc/sounds/bell-ringing-05.mp3"></audio>
+
+<script src="script.js"></script>
+
+</body>
+</html>
